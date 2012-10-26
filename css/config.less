@@ -1,0 +1,67 @@
+@background_color: #eee;
+@base_color: #aaa;
+@hover_base_color: lighten(@base_color, 10%);
+@error_color: lighten(#F88017, 30%);
+@del_color: #C11B17;
+@del_hover_color: lighten(@del_color, 10%);
+@font_color: #111;
+@button_font_color: #fff;
+@link_color: #000;
+@font_family: 'Helvetica';
+
+.rounded_corners {
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+
+.bottom_rounded_corners {
+	border-bottom-left-radius:5px;
+	-moz-border-bottom-left-radius:5px;
+	-webkit-border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
+	-moz-border-bottom-right-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+}
+
+.top_rounded_corners {
+	border-top-left-radius:5px;
+	-moz-border-top-left-radius:5px;
+	-webkit-border-top-left-radius:5px;
+	border-top-right-radius:5px;
+	-moz-border-top-right-radius:5px;
+	-webkit-border-top-right-radius:5px;
+}
+
+.alpha (@value){
+	/* for IE */
+	filter: alpha(opacity=@value);
+	/* for CSS3-standard browsers */
+	opacity: @value/100;
+}
+
+.shadowed {
+	box-shadow:0 1px 2px rgba(0,0,0,.5);
+	-moz-box-shadow:0 1px 2px rgba(0,0,0,.5);
+	-webkit-box-shadow:0 1px 2px rgba(0,0,0,.5);
+}
+
+.inset_shadowed {
+	-webkit-box-shadow: inset 0px 2px 3px rgba(0,0,0,.5);
+	-moz-box-shadow: inset 0px 2px 3px rgba(0,0,0,.5);
+	box-shadow: inset 0px 2px 3px rgba(0,0,0,.5);
+}
+
+.fontnormal {
+	color: @font_color;
+	font-size: 11pt;
+	font-family: @font_family;
+}
+
+.superscript{
+	font-size:xx-small; vertical-align:top;
+}
+
+.subscript{
+	font-size:xx-small; vertical-align:bottom;
+}

@@ -1,0 +1,80 @@
+@import "config.less";
+
+html, body {
+	width: 100%;
+	.fontnormal;
+	background-color: @background_color;
+	margin: 0;
+	padding: 0;
+}
+
+h1, h2, h3, h4 {
+}
+
+p {
+}
+
+li {
+	line-height: 150%;
+}
+
+hr {
+	background-color: @base_color;
+	height: 5px;
+}
+
+
+a {
+	color: @link_color;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+
+label {
+	font-family: @font_family;
+	font-weight: bold;
+}
+
+input {
+	.rounded_corners;
+	.fontnormal;
+	color: @font_color;
+	border: 1px solid @font_color;
+	padding: 5px;
+	outline: none;
+}
+
+input.error {
+	background-color: @error_color;
+}
+
+button {
+	cursor: pointer;
+	border: 0px;
+	.rounded_corners;
+	.fontnormal;
+	background-color: @base_color;
+	color: @button_font_color;
+	padding: 8px 15px 8px 15px;
+	outline: none;
+	font-family: @font_family;
+	font-size: 10pt;
+	/*text-shadow: 1px 1px 5px #333;*/
+}
+
+button:hover {
+	background-color: @hover_base_color;
+}
+
+select {
+	background-color: @background_color;
+	padding: 5px;
+	.fontnormal;
+	.rounded_corners;
+	color: @font_color;
+	outline: none;
+	border: 1px solid @font_color;
+}

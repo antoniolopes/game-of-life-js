@@ -1,0 +1,102 @@
+@import "config.less";
+@import "base.less";
+
+@content_width: 1000px;
+@content_height: 600px;
+@canvas_width: 600px;
+@canvas_height: 600px;
+
+#header {
+  div.title {
+    font-size: 20pt;
+    font-weight: bold;
+    float: left;
+    width: @canvas_width/2;
+  }
+  height: 30px;
+  margin-left: 10px;
+  margin-top: 20px;
+  padding: 0;	
+}
+
+#content {
+  margin-left: 10px;
+  width: @content_width;
+  height: @content_height;
+  margin-top: 20px;
+  padding: 0;
+}
+
+canvas {
+  float: left;
+	border: 1px solid @base_color;
+	cursor: pointer;
+}
+
+canvas:focus {
+	outline: 0;
+}
+
+#info {
+  width: 350px;
+  float: left;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  padding-left: 10px;
+}
+
+#commands {
+  float: left;
+  width: 300px;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 10px;
+  #reset {
+    background-color: darken(#EAA400, 10%);
+  }
+  #start {
+    background-color: darken(#80B584, 20%);
+  }
+  #stop {
+    background-color: darken(#F70000, 20%);
+  }
+  #random {
+    background-color: darken(#EAA400, 10%);
+  }
+}
+
+#generations {
+  float: left;
+  font-size: 10pt;
+  #box {
+    background-color: @base_color;
+    border: 1px solid @base_color;
+    color: #fff;
+    float: left;
+    padding: 5px 10px 5px 10px;
+    margin: 0px;
+    width: 100px;
+  }
+  #value {
+    float: left;
+    text-align: right;
+    padding: 5px 10px 5px 10px;
+    margin: 0px;
+    width: 200px;
+    border: 1px solid @base_color;
+  }
+}
+
+#text {
+  float: left;
+    p {
+    font-size: 10pt;
+  }
+  p.title {
+    margin-top: 15px;
+    font-size: 11pt;
+    font-weight: bold;
+  }
+}
